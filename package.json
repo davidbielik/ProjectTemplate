@@ -20,7 +20,7 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidbielik/ProjectTemplate.git"
+    "url": "git+https://github.com/davidbielik/ProjectTemplate.git"
   },
   "bugs": {
     "url": "https://github.com/davidbielik/ProjectTemplate/issues"
