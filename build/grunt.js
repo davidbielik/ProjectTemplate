@@ -1,7 +1,7 @@
 /*
  *	grunt 1.0.0
  *	-- ProjectTemplate
- *	https://github.com/davidbielik/ProjectTemplate.git
+ *	git+https://github.com/davidbielik/ProjectTemplate.git
  *	Built on 2015-05-04
  */
 function addOne(num) {
