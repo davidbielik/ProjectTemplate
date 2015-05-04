@@ -72,8 +72,19 @@ module.exports = function(grunt) {
             }
         },
         watch: {
-            files: ['spec/**/*-spec.js','<%=jsDir%>*.js'],
+            files: ['spec/**/*-spec.js', '<%=jsDir%>*.js'],
             tasks: ['jshint', 'concat', 'uglify']
+        },
+        jasmine_node: {
+            options: {
+                forceExit: true,
+                match: '.',
+                matchall: false,
+                extensions: 'js',
+                specNameMatcher: 'spec',
+                keepRunner: true
+            },
+            all: ['spec/']
         }
     });
 
@@ -81,6 +92,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-jasmine-node');
 
-    grunt.registerTask('default', ['jshint', 'concat', 'uglify','watch']);
+    grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'jasmine_node', 'watch']);
 };

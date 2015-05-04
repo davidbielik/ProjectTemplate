@@ -1,5 +1,6 @@
 (function() {
 	'use strict';
+	var addOne = require('../src/addOne.js');
 	describe("addOne module", function() {
 		it("should work pretty well", function() {
 			expect(addOne(1)).toBe(2);
